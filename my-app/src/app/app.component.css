@@ -1,0 +1,68 @@
+* {
+    font-weight: 400;
+    color: hsl(0, 0%, 17%);
+    border-radius: 1px;
+
+}
+
+.bck-img {
+    background-image: url("../assets/images/pattern-bg.png");
+
+}
+
+.head-style {
+    color: hsl(0, 0%, 66%);
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.font {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.map-border {
+    border-right: 1px solid rgb(235, 235, 235);
+}
+
+.testifi .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.testifi .content h2 {
+    color: #243c4f;
+    margin-bottom: 40px;
+}
+
+.testifi .content .form-control {
+    height: 50px;
+    border-color: #ffffff;
+    border-radius: 0;
+}
+
+.testifi .content.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #243c4f;
+}
+
+.testifi .content .btn {
+    min-height: 50px;
+    border-radius: 0;
+    background: #243c4f;
+    color: #fff;
+    font-weight: 600;
+}
+
+.map-container {
+    height: 400px;
+}
+
+.item {
+    width: calc(100% - 200px);
+    border-radius: 12px;
+}

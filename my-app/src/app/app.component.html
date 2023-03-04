@@ -1,0 +1,62 @@
+<section class="testifi m-5">
+  <div class="container">
+
+    <div class="row bck-img">
+      <div class="col-sm-12">
+        <div class="content">
+          <h2 class="text-white pt-4">IP Address Tracker</h2>
+          <div class="input-group" *ngFor="let locations of location">
+            <input type="email" class="form-control rounded text-center" value={{locations.ip}} name="created" ngModel
+              placeholder="Search for any IP address and domain">
+
+            <span class="input-group-btn">
+              <button class="btn" type="submit">Search</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 d-flex align-items-center justify-content-center">
+            <div class="card item mt-3">
+              <div class="card-body">
+                <div class="d-flex flex-row" *ngFor="let locations of location">
+                  <div class="p-2 bg-white text-center map-border w-25">
+                    <h6 class="head-style"> IP Address</h6>
+                    <strong class="font">{{locations.ip}}</strong>
+                  </div>
+                  <div  class="p-2 bg-white text-center map-border w-25">
+                    <h6 class="head-style"> Locations</h6>
+                    <strong class="font">{{locations.region }}</strong>
+                  </div>
+                  <div class="p-2 bg-white text-center map-border w-25">
+                    <h6 class="head-style"> Time Zone</h6>
+                    <strong class="font">{{locations.timezone}}</strong>
+                  </div>
+                  <div class="p-2 bg-white text-center w-25">
+                    <h6 class="head-style"> ISP</h6>
+                    <strong class="font">{{locations.isp}}</strong>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="map-container" leaflet [leafletOptions]="options"
+            (leafletClick)="mapClicked($event)">
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+</section>

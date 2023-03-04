@@ -1,0 +1,22 @@
+[
+{
+	"as": {
+		"asn": 15169,
+		"domain": "https://about.google/intl/en/",
+		"name": "GOOGLE",
+		"route": "8.8.8.0/24",
+		"type": "Content"
+	},
+	"ip": "8.8.8.8",
+	"isp": "Google LLC",
+	"location": {
+		"city": "Mountain View",
+		"country": "US",
+		"geonameId": 5375480,
+		"lat": 37.38605,
+		"lng": -122.08385,
+		"postalCode": "94035",
+		"region": "California",
+		"timezone": "-08:00"
+	}
+}
